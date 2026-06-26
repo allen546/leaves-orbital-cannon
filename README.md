@@ -8,6 +8,9 @@ Leaves
 
 **English** | [中文](README_cn.md)
 
+> [!NOTE]
+> This repository is a port of the orbital cannon paper patch to Leaves, and is completely unrelated to Mojang or Microsoft.
+
 > Fork of [Paper](https://github.com/PaperMC/Paper) aims at repairing broken vanilla properties.
 
 > You can see what we modify and fix at [here](https://docs.leavesmc.org/en/leaves/reference/configuration)
