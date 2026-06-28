@@ -10,6 +10,7 @@ Leaves
 
 > [!NOTE]
 > This repository is a port of the orbital cannon paper patch to Leaves, and is completely unrelated to Mojang or Microsoft.
+> Special thanks to [Kwilver](https://github.com/Kwilver) for creating [KwilsOrbitalPaper](https://github.com/Kwilver/KwilsOrbitalPaper), which allowed orbital cannons to fire on Paper servers.
 
 > Fork of [Paper](https://github.com/PaperMC/Paper) aims at repairing broken vanilla properties.
 
