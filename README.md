@@ -16,6 +16,28 @@ Leaves
 
 > You can see what we modify and fix at [here](https://docs.leavesmc.org/en/leaves/reference/configuration)
 
+## Recommended Leaves Configuration
+
+To run the orbital cannon on this Leaves server, the following configuration settings must be adjusted in `leaves.yml`:
+
+### Required Settings (Functional Parity)
+These settings must be changed to restore vanilla physics and portal mechanics needed for the cannon to fire.
+
+| Config Path | Value | Default | Rationale / Why it is needed |
+| :--- | :--- | :--- | :--- |
+| `settings.modify.mc-technical-survival-mode` | `true` | `false` | Restores standard vanilla technical survival mechanics that Paper patches out. |
+| `settings.modify.minecraft-old.allow-entity-portal-with-passenger` | `true` | `false` | Allows vehicles with passengers (like items or minecarts) to pass through portals. |
+| `settings.modify.minecraft-old.allow-inf-nan-motion-values` | `true` | `false` | Prevents errors and physics issues during extreme velocity launches. |
+| `settings.fix.vanilla-portal-handle` | `true` | `false` | Restores vanilla nether portal search and ticking behavior (crucial for stasis chambers). |
+
+### Recommended Settings (Performance Optimization)
+These settings prevent the server TPS from dropping to single digits during the stasis charge-up phase.
+
+| Config Path | Value | Default | Rationale / Why it is needed |
+| :--- | :--- | :--- | :--- |
+| `settings.performance.skip-negligible-planar-movement-multiplication` | `true` | `false` | Skips tiny entity calculations to save CPU cycles when 800+ TNT entities are in stasis. |
+| `settings.fix.collision-behavior` | `PAPER` | `VANILLA` | Restores Spottedleaf's optimized collision routines to tick stasis chambers without major lag. |
+
 ## How To (Server Admins)
 Leaves use the same leavesclip(paperclip fork) jar system that Paper uses.
 
